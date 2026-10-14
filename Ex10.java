@@ -6,8 +6,8 @@ public static void main(String s[])throws Exception
 Connection con;
 PreparedStatement ps;
 Class.forName("com.mysql.jdbc.Driver");
-con=DriverManager.getConnection("jdbc:mysql://localhost:3307/muthupandi","root","");
-ps=con.prepareStatement("insert into students values(101,'muthupandi','Msc(CS)',7.35)");
+con=DriverManager.getConnection("jdbc:mysql://localhost:3307/yuvashri","root","");
+ps=con.prepareStatement("insert into students values(101,'yuvashri','Msc(CS)',7.35)");
 ps.executeUpdate();
 System.out.println("Insert Successfully");
 ps=con.prepareStatement("UPDATE `students` SET `deparment`='ECE' WHERE `rollno`=101");
